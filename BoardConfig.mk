@@ -35,6 +35,9 @@ TARGET_KERNEL_CONFIG := kenzo_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# custom additions to updater-script
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := $(DEVICE_PATH)/releasetools/ota_from_target_files
+
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
